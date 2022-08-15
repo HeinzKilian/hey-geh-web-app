@@ -1,10 +1,20 @@
 <template lang="pug">
 .app
-    nav
-        router-link(to="/") Home
-        router-link(to="/about") About
+    NavBar
     router-view
 </template>
+
+<script>
+import NavBar from './components/NavBar.vue';
+
+export default {
+    components: { NavBar },
+    data() {
+        return {
+        }
+    },
+}
+</script>
 
 <style scoped lang="scss">
 .app {

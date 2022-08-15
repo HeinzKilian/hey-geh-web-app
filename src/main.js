@@ -6,7 +6,6 @@ import * as components from 'vuetify/components'
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App).use(router).use(router)
 const vuetify = createVuetify(
     {
         components,
@@ -15,7 +14,6 @@ const vuetify = createVuetify(
         },
     }
 )
-
-app.use(vuetify)
+const app = createApp(App).use(router).use(vuetify)
 
 app.mount('#app')
