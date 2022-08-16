@@ -1,7 +1,13 @@
 @import 'variables.scss';
 
 
-:root {
+.app {
+    height: 100vh;
     background-color: $color-bg-primary;
     color: $color-text-primary;
+    text-align: center;
+
+    .link:hover {
+        cursor: pointer;
+    }
 }
