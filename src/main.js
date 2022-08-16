@@ -1,4 +1,5 @@
 import 'vuetify/styles'
+import '@/assets/css/app.scss'
 import { createApp } from 'vue'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -9,6 +10,9 @@ const app = createApp(App).use(router).use(router)
 const vuetify = createVuetify(
     {
         components,
+        display: {
+            mobileBreakpoint: 'sm',
+        },
     }
 )
 
